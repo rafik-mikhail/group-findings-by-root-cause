@@ -5,6 +5,8 @@ metadata:
   version: "1.0.0"
 ---
 
+> **Retired. Do not use.** Use deduplicate-scan-findings for fix-target tags, decide-finding-action for shared-code fix keys, and batch-finding-fixes for batching.
+
 # Group findings by root cause
 
 ## Job and boundary

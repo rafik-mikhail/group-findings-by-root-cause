@@ -1,5 +1,13 @@
 # Group Findings by Root Cause
 
+> **Retired.** This step is no longer part of the workflow and the repository is archived. Grouping before validation guessed at shared causes from unvalidated findings. Its parts moved:
+>
+> - Mechanical fix targets (dependency and lockfile, base image, IaC module, secret) are tagged as labels in [Deduplicate Scan Findings](https://github.com/rafik-mikhail/deduplicate-scan-findings).
+> - Shared code causes and missing central controls are grouped after validation through the fix key in [Decide Finding Action](https://github.com/rafik-mikhail/decide-finding-action).
+> - Batching by fix key and pattern cohorts stays in [Batch Finding Fixes](https://github.com/rafik-mikhail/batch-finding-fixes).
+>
+> The current workflow is Normalize → Deduplicate → Prioritize → Validate → Decide → Batch.
+
 An agent skill that groups distinct findings that one change would plausibly resolve, such as one dependency upgrade, shared helper, IaC module, or secret rotation. It also lists pattern cohorts of similar findings that need the same kind of fix in separate places. Groups are planning hypotheses, not verdicts.
 
 ## Use the skill
